@@ -1,0 +1,23 @@
+/* 解决一些公共的样式 */
+body {
+    font-size: 14px;
+    background: #f4f4f4;
+}
+
+/* 图像文字文件代码 */
+@font-face {font-family: "iconfont";
+    src: url('./font/iconfont.eot?t=1603729939112'); /* IE9 */
+    src: url('./font/iconfont.eot?t=1603729939112#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAN8AAsAAAAAB4AAAAMtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqCaIJIATYCJAMMCwgABCAFhG0HPxuPBsgusG3YE0EIiTWup+lYaYeB3J7i4el+fOfOzI/OjeSo9qVvC5IJlKJJDbpWacvvz7X810sZVGdSRNxLFg5yS2XUICTyt0SOFLD7QrcBF1X93f/NzzONNq/n5QHeB26K54Ft8MRuwAYcaqCUJbt+cE39BB/mAc3pY1EUVdY4HI/GAxpgdBBtoC3GG8auvIjZBBqNime3rbK+HZwVRqNALIn8CDinNEpNcqgXakt6FvEAHNSnm4b3uO8/Pn5bG84kNZnR8tC5CiMUf4N/AS08ot9FgB3PBNaPjOVAIU6UWg5BYWQ5pFGJ2JsG66oUfAuPFd/AZVb7h0dIRC0jsRnMQ0U6I9ZWOjUW/lACGdSiHkvAwxHSSWp7m92bzBX6yyR9Jl2fufMjtn+iji/SRHb248UpKaCSFHw+n5l7jvgJbX8lYU/52Na3eBwV24cLB/zsQ4f2PLF7ubreOjmNahrYOd28bu8Hnd0D3+tVdKg0IeGmvaRqyuGvz0f5EP3+7Kxy9PvTYamBJfbGJxwlx4PzlDy09eTJFtpGlGPYMmybttFWnAaHDg+VDg62ethvk3kZ/6v/bhBUVR9dQQEBARU3/tAz76q0W+HBAkpKi1tXo7gNHtOeRSsKl9JrY99c8FSNA9WriiG/1kWD7tdYN+SV/7++qYCP/1AXptqhxC4AqD91a/AbFGUUZKkqMbS5yAq1jO7N9njdpgSkuEGFHJ2+9Vf2YJytXk8MSZ0RyOpNo4VcDjWarIda9TZCo2Wq+jfpokCiNGDRKoDQ7hySVq8ga/cBLeRXqNHrP9RqDwSNToTfiE1mQ3QtU8iIRox4dBKLHLNSS6+5BsmthNfNI0pS4nM7iaKKfpySmJyNVxErUcZoo47xqZpGMVWYBVeC+YjZzLBNYRLhtERB02y5SUm07EqJHLOAq60UxAgNYYSNmoSJOIwVdYtrXHP3b0XwdGYjlJqcimgnQqESy8dSJEpugVYpra1yrmUf1RheKo2GwigFY4FVAhNhNiMMZiuvJiE4mkRCj5BNriSUj7ZVJs6vtjzfEmhkjJEjRY6i/vyQynRVZ65BtqBLOieIAAAAAA==') format('woff2'),
+    url('./font/iconfont.woff?t=1603729939112') format('woff'),
+    url('./font/iconfont.ttf?t=1603729939112') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./font/iconfont.svg?t=1603729939112#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

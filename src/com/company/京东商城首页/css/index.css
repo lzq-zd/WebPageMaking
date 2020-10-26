@@ -1,0 +1,151 @@
+/* 解决页面级的  */
+/* ------------------ 设置导航栏 -------------------------------*/
+/* 灰色背景 8*/
+.navigation {
+    height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 一定宽度居中,靠右边*/
+.navigation-box {
+    margin: 0px auto;
+    width: 1190px;
+    text-align: right;
+}
+
+/* 设置为横着排布 */
+.navigation-box ul li {
+    display: inline-block; /*横着排列*/
+    padding: 0px 10px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 设置链接字体去掉下边线，字体颜色 */
+.navigation-box ul li a {
+    color: #999999;
+    text-decoration: none;
+}
+
+/* 增加右边线*/
+.navigation-box ul li:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #cccccc;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    display: block;
+}
+
+/* 鼠标移动到标签上面标签变红色*/
+.navigation-box ul li a:hover {
+    color: #f10215;
+}
+
+/* ------------------ 设置头部 -------------------------------*/
+/* 头部大小 */
+.header-box {
+    height: 140px;
+    background: #ffffff;
+}
+
+.header {
+    width: 1190px;
+    display: flex;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+/* 设置logo大小 这个地方定义的是容器*/
+.header .logo-box {
+    width: 190px;
+    height: 120px;
+}
+
+/* 整个搜索模块 */
+.header .search-box {
+    width: 790px;
+    padding: 10px 10px;
+}
+
+/* 搜索框 */
+.header .search-bar {
+    padding: 15px 0px 0px 50px;
+    display: flex;
+}
+
+/* 输入框设置 */
+.search-bar input {
+    border:1px solid #e1251b;
+    width: 500px;
+    height: 30px;
+    padding: 2px 10px;
+    outline: none;
+}
+
+/* 搜索按钮*/
+.search-button {
+    width: 50px;
+    height: 34px;
+    border: 1px solid #e1251b;
+    background: #e1251b;
+    cursor: pointer;  /*鼠标放上去就会变成一个小手*/
+    line-height: 34px;
+    text-align: center;
+}
+
+/* 搜索图标设置 */
+.search-bar .iconfont-search {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 购物车按钮*/
+.cart-button {
+    margin: 0px 0px 0px 20px;
+    width: 100px;
+    height: 34px;
+    border: 1px solid #e1251b;
+    line-height: 34px;
+    text-align: center;
+    color: #e1251b;
+    font-size: 12px;
+    cursor: pointer;  /*鼠标放上去就会变成一个小手*/
+}
+
+/* 购物车图标 */
+.search-bar .iconfont-cart {
+    font-size: 18px;
+    font-weight: bold; /*加粗*/
+    text-align: center;
+}
+
+/* 导航单1*/
+.header .recommend {
+    font-size: 12px;
+    padding: 5px 0px 20px 50px;
+}
+
+/* 设置列表项为灰色*/
+.header .recommend a {
+    color: #999999;
+}
+
+/* 横着排 */
+.search-box ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.search-box ul li a {
+    color: #333333;
+}
+
+
+
+
