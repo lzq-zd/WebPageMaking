@@ -21,6 +21,7 @@
     font-size: 12px;
     height: 30px;
     line-height: 30px;
+    position: relative;
 }
 
 /* 设置链接字体去掉下边线，字体颜色 */
@@ -90,7 +91,7 @@
 /* 搜索按钮*/
 .search-button {
     width: 50px;
-    height: 34px;
+    height: 36px;
     border: 1px solid #e1251b;
     background: #e1251b;
     cursor: pointer;  /*鼠标放上去就会变成一个小手*/
@@ -109,7 +110,7 @@
 .cart-button {
     margin: 0px 0px 0px 20px;
     width: 100px;
-    height: 34px;
+    height: 36px;
     border: 1px solid #e1251b;
     line-height: 34px;
     text-align: center;
@@ -146,6 +147,132 @@
     color: #333333;
 }
 
+/* ------------------ 设置内容 -------------------------------*/
 
+/* 第一个内容展示模块总体设置 */
+.content .wrapper {
+    margin: 0px auto; /*居中*/
+    width: 1190px;
+    padding: 10px;
+    display: flex/*弹性布局*/
+}
 
+/* 分类菜单布局 */
+.memu-box {
+    width: 190px;
+    background: white;
+    position: relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+
+.memu-box ul li {
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 12px;
+    overflow: hidden; /*限制文字再长也不会冒出去*/
+}
+
+/*设置鼠标效果*/
+.memu-box ul li:hover {
+    background: #d9d9d9;
+}
+
+/*标签设置，黑色字体，无下边线*/
+.memu-box ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/*鼠标点击之后变为红色*/
+.memu-box ul li a:hover {
+    color: #e1251b;
+}
+
+/* 二级菜单设置*/
+.memu-box .sub-menu {
+    position: absolute;
+    top:0px;
+    left:190px;
+    background: white;
+    z-index: 10;
+    width:900px;
+    padding: 20px;
+    font-size: 12px;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+    display: none;  /*隐藏*/
+}
+
+/*!* 设置鼠标效果,显示二级菜单 *! js处理，不需要css了
+.memu-box ul li:hover .sub-menu{
+    display: block;
+}*/
+
+/*js处理*/
+.memu-box ul li .active {
+    display: block;
+}
+
+/* 设置左模块向左覆盖*/
+.sub-menu .left-box {
+    float: left;
+    max-width: 700px;
+}
+
+/* 右盒向右覆盖*/
+.sub-menu .right-box {
+    float: right;
+    width: 160px;
+}
+
+.sub-menu .menu-title {
+    margin: 0px 0px 10px 0px;
+}
+
+/* 设置那个表单外面的黑框框*/
+.sub-menu .menu-title .item {
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px;
+    color: white;
+}
+
+/* 鼠标放上面去会变红*/
+.sub-menu .menu-title .item:hover {
+    background: #e1251b;
+}
+
+/*弹性布局*/
+.sub-menu dl {
+    display: flex;  /*设置dl下面的dt、dd在同一行显示*/
+}
+
+.sub-menu dt {
+    font-weight: bold;
+    width: 70px;
+    text-align: right; /*靠右对齐*/
+    flex-shrink: 0; /*这样就不会挤扁了，可以被压缩,不会去开下一行了*/
+}
+
+.sub-menu dd a{
+    padding: 4px 8px 4px 8px;
+    white-space: nowrap;
+}
+
+/*设置广告*/
+.sub-menu .right-box {
+    float: right; /*右侧浮动*/
+    width: 168px;
+}
+
+/*设置图片盒子*/
+.sub-menu .pic-box {
+    margin: 0px 0px 10px 0px;
+}
+
+/*针对最后一个图片盒子设置,就是上一个设置对最后一图片不起作用*/
+.sub-menu .pic-box:last-child {
+    margin: 0px;
+}
 

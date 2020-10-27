@@ -13,3 +13,9 @@ li {
 a {
     text-decoration: none;
 }
+
+/*设置默认间距*/
+dl,dd,dt {
+    margin: 0px;
+    padding: 0px;
+}
