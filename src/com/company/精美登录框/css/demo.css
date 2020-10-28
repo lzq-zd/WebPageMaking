@@ -1,0 +1,66 @@
+/* 图像文字文件代码 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/iconfont.eot');
+    src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('./font/iconfont.woff2') format('woff2'),
+    url('./font/iconfont.woff') format('woff'),
+    url('./font/iconfont.ttf') format('truetype'),
+    url('./font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#login-box {
+    width: 30%;
+    height: auto;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 15%;
+    text-align: center;
+    background: #00000060;
+    padding: 20px 50px;
+}
+
+#login-box .form .item {
+    margin-top: 15px;
+}
+
+#login-box .form .item span{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#login-box .form .item input {
+    width: 180px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    padding: 5px 10px;
+    background: #ffffff00;
+    color: #ffffff;
+}
+
+#login-box button {
+    margin-top: 15px;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background-image: linear-gradient(to right,#ad3125 0%,#578bc3 100%);
+    border: 0;
+    border-radius: 15px;
+}

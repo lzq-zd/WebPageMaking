@@ -1,0 +1,1 @@
+browser-sync start --server "F:\Java空间\网页设计学习\src\com\company\精美登录框" --files "css/*.css, *.html"
