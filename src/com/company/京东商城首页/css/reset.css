@@ -1,5 +1,5 @@
 /* 解决各个浏览器不同属性 */
-html,body,ul,li {
+html,body,ul,ol,li {
     margin:0px;
     padding: 0px;
 }

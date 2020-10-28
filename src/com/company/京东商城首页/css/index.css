@@ -153,13 +153,13 @@
 .content .wrapper {
     margin: 0px auto; /*居中*/
     width: 1190px;
-    padding: 10px;
+    padding: 10px 0px;
     display: flex/*弹性布局*/
 }
 
 /* 分类菜单布局 */
 .memu-box {
-    width: 190px;
+    width: 370px;
     background: white;
     position: relative;
     padding: 10px 0px;
@@ -176,6 +176,16 @@
 /*设置鼠标效果*/
 .memu-box ul li:hover {
     background: #d9d9d9;
+}
+
+/*!* 设置鼠标效果,显示二级菜单 *! js处理，不需要css了
+.memu-box ul li:hover .sub-menu{
+    display: block;
+}*/
+
+/*js处理*/
+.memu-box ul li .active {
+    display: block;
 }
 
 /*标签设置，黑色字体，无下边线*/
@@ -203,16 +213,6 @@
     display: none;  /*隐藏*/
 }
 
-/*!* 设置鼠标效果,显示二级菜单 *! js处理，不需要css了
-.memu-box ul li:hover .sub-menu{
-    display: block;
-}*/
-
-/*js处理*/
-.memu-box ul li .active {
-    display: block;
-}
-
 /* 设置左模块向左覆盖*/
 .sub-menu .left-box {
     float: left;
@@ -223,6 +223,10 @@
 .sub-menu .right-box {
     float: right;
     width: 160px;
+}
+
+.sub-menu .pic-box:last-child {
+    margin: 0px;
 }
 
 .sub-menu .menu-title {
@@ -276,3 +280,153 @@
     margin: 0px;
 }
 
+/* ------------------ 设置轮播图 -------------------------------*/
+/* 轮播图的大样式*/
+.slider-box {
+    margin-right: 10px; /*和右边广告间距为10*/
+}
+
+/* 容器*/
+.slider-box .slider {
+    width: 590px;
+    height: 470px;
+    position: relative; /*相对布局*/
+    overflow: hidden;  /*图片不能溢出*/
+}
+
+/* 存放所有的图片*/
+.slider-box .slider ul {
+    position: absolute;
+    top:0px;
+    /* 这个地方设置为负数，是因为，使用辅助图方案之后，把最后一张的clone放在了队列前面
+       不做处理的话，会第一张显示这个最后一张的clone
+    */
+    /*left:-590px;
+    width: 500%;*/
+    /*注释掉是因为在js里面控制了*/
+    height: 100%;
+}
+
+/* 每张图片*/
+.slider-box .slider ul li{
+    float: left;
+}
+
+/*左右箭头*/
+ .slider-box .left-box {
+     background: rgba(0,0,0,0.2);  /*颜色和透明度*/
+     position: absolute; /*绝对定位*/
+     top:45%;
+     left:0px;
+     width: 25px;
+     height: 25px;
+     color: #ffffff;
+     display: flex;  /*弹性布局*/
+     /*水平竖直居中*/
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;  /*鼠标移动过来是一个小手*/
+ }
+
+.slider-box .right-box {
+    background: rgba(0,0,0,0.2);  /*颜色和透明度*/
+    position: absolute; /*绝对定位*/
+    top:45%;
+    right:0px;
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    display: flex;  /*弹性布局*/
+    /*水平竖直居中*/
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  /*鼠标移动过来是一个小手*/
+}
+
+/*设置左右箭头大小*/
+.slider-box .left-box, .slider-box .right-box span {
+    font-size: 20px;
+}
+
+/*索引设置，按照比例大小显示*/
+.slider-box .index-box {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+
+/* >代表直接的子元素 */
+.slider-box .index-box > ol{
+    height: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+}
+
+.slider-box .index-box > ol > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /*显示为圆的*/
+    background: #ffffff;
+    list-style: none;
+    cursor: pointer;
+}
+
+/*鼠标点击的那个小圆点变成红色*/
+.slider-box .index-box > ol > li.active {
+    background: #e1251b;
+}
+
+
+/* ------------------ 设置广告图片 -------------------------------*/
+/*设置广告部分宽度 右间距*/
+.ad-box {
+    width: 300px;
+    margin-right: 10px;
+}
+
+/*广告高度、广告之间的间隙*/
+.ad-box .pic-box:not(:last-child) {
+    height: 155px;
+    margin-bottom: 8px;
+}
+
+/* ------------------ 设置新闻快报 -------------------------------*/
+.new-box {
+    width: 150px;
+    background: white;
+    position: relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+
+.new-box .new-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.new-box ul {
+    font-size: 12px;
+}
+
+.new-box ul li {
+    font-size: 12px;
+    padding: 5px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.new-box ul li a span {
+    color: #e1251b;
+    padding: 2px 4px;
+    background: rgba(225,37,27,.08);
+    margin-right: 5px;
+}
+
+.new-box ul li a {
+    color: #666666;
+    text-decoration: none;
+}
