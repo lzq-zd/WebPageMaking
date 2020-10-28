@@ -1,0 +1,1 @@
+browser-sync start --server "F:\Java空间\网页设计学习\src\com\company\手风琴效果" --files "css/*.css, *.html"
