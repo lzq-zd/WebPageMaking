@@ -1,0 +1,9 @@
+/* 设置表单列表前面的圆圈消失 */
+li {
+    list-style: none;
+}
+
+/* 去掉链接下边线*/
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义弹窗</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<button>Click me</button>
+<script src="../js/index.js"></script>
+<script>
+    document.querySelector("button").addEventListener("click",()=>{
+        new $Msg({
+            content:"我的自定义弹窗好了",
+            type:"success",
+            cancle:function(){
+                let cancle = new $Msg({
+                    content:"我是取消后的回调"
+                })
+            },
+            confirm:function(){
+                new $Msg({content:"我是确定后的回调"})
+            }
+        })
+    })
+
+</script>
+</body>
+</html>

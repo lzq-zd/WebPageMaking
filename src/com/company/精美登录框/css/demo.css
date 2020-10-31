@@ -17,8 +17,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 body {
-    background: url("../img/3.jpg");
+    background: url("../img/11.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -28,10 +29,14 @@ body {
     height: auto;
     border: 1px solid #000;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center;
     background: #00000060;
     padding: 20px 50px;
+}
+
+#login-box h1{
+    color: white;
 }
 
 #login-box .form .item {
@@ -54,13 +59,43 @@ body {
 }
 
 #login-box button {
-    margin-top: 15px;
+    margin-top: 20px;
     width: 180px;
     height: 30px;
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
     color: #ffffff;
     background-image: linear-gradient(to right,#ad3125 0%,#578bc3 100%);
     border: 0;
     border-radius: 15px;
 }
+
+.checkbox {
+    padding-top: 10px;
+}
+
+.checkbox .checkbox-label {
+    padding-right: 60px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.checkbox .checkbox-a {
+    padding-left: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.register {
+    padding-top: 15px;
+}
+
+.register a {
+    color: white;
+    font-weight: 700;
+}
+
+
+

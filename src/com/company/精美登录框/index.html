@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>登录</title>
     <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" type="images/x-icon"  href="img/login.png" />
+    <!--<embed src="music/login.mp3" hidden="true" autostart="true" loop="true">-->
+    <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+           src="music/login.mp3">
+    </audio>
 </head>
 <body>
      <div id="login-box">
@@ -15,9 +21,23 @@
              </div>
              <div class="item">
                  <span class="iconfont">&#xe603;</span>
-                 <input type="text" placeholder="密码">
+                 <input type="password" placeholder="密码">
+             </div>
+             <div class="checkbox">
+                 <label class="checkbox-label">
+                     <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">
+                     记住我
+                 </label>
+                 <a href="#" class="checkbox-a">
+                     忘记密码
+                 </a>
              </div>
              <button>登录</button>
+             <div class="register">
+                 <a href="#" class="checkbox-register">
+                     还未注册？点击注册
+                 </a>
+             </div>
          </div>
      </div>
 </body>
