@@ -1,7 +1,9 @@
+/*
 body {
     margin: 0;
     background: #222428;
 }
+*/
 
 .loading {
     position: absolute;
@@ -14,21 +16,21 @@ body {
     font-weight: normal;
     margin: 0;
     text-align: center;
-    color: gray;
+    justify-content: center;
+    color: green;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
+    left: 15px;
+    right: 15px;
+    top: 45%;
     height: 20px;
     line-height: 20px;
-    margin: -10px 0 0;
     animation: fade 2s ease infinite;
 }
 
 .loading .circle-out {
     width: 200px;
     height: 200px;
-    border: 0px solid #2b2e34;
+    border: 0 solid #2b2e34;
     border-radius: 200px;
     animation: circle 2s ease infinite;
 }
@@ -36,7 +38,7 @@ body {
 .loading .circle-in {
     width: 170px;
     height: 170px;
-    border: 0px solid #2b2e34;
+    border: 0 solid #2b2e34;
     border-radius: 200px;
     position: absolute;
     left: 50%;
