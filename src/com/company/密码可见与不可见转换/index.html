@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .password{
+            position: relative;
+            width: 280px;
+            height: 60px;
+        }
+        .password,.n-txtCss{
+            display: flex;
+            align-items: center;
+        }
+        .password .fa{
+            position: absolute;
+            right: 10px;
+            top:15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .fa-eye-slash{
+            margin-top: 6px;
+            margin-left: 7px;
+            width: 24px;
+            height: 20px;
+            background-image: url(隐藏、不可见.png);
+            background-repeat: no-repeat;
+            background-size: 24px 17px;
+        }
+        .fa-eye{
+            margin-top: 6px;
+            width: 24px;
+            margin-left: 7px;
+            height: 20px;
+            background-image: url(可见.png);
+            background-repeat: no-repeat;
+            background-size: 24px 17px;
+
+        }
+
+    </style>
+    <script type="text/javascript" src="../static/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+<dd class="password">
+    <input type="password" name="" placeholder="设置密码：8-16位字母和数字" maxlength="16" style="outline: none;width: 240px;">
+    <i class="fa fa-eye-slash"></i>
+</dd>
+<script type="text/javascript">
+    $(".password").on("click", ".fa-eye-slash", function () {
+        $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+        $(this).prev().attr("type", "text");
+    });
+
+    $(".password").on("click", ".fa-eye", function () {
+        $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+        $(this).prev().attr("type", "password");
+    });
+</script>
+</body>
+</html>

@@ -1,33 +1,26 @@
-/*
-body {
-    margin: 0;
-    background: #222428;
-}
-*/
-
-.loading {
+#loading {
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -100px 0 0 -100px;
+    padding: 0 auto 0 auto;
 }
 
-.loading h3 {
-    font-weight: normal;
+#loading h3 {
+    //font-weight: normal;
     margin: 0;
     text-align: center;
-    justify-content: center;
     color: green;
     position: absolute;
-    left: 15px;
-    right: 15px;
+    left: 10%;
+    right: 10%;
     top: 45%;
     height: 20px;
     line-height: 20px;
     animation: fade 2s ease infinite;
 }
 
-.loading .circle-out {
+#loading .circle-out {
     width: 200px;
     height: 200px;
     border: 0 solid #2b2e34;
@@ -35,7 +28,7 @@ body {
     animation: circle 2s ease infinite;
 }
 
-.loading .circle-in {
+#loading .circle-in {
     width: 170px;
     height: 170px;
     border: 0 solid #2b2e34;
@@ -49,8 +42,8 @@ body {
     transform-origin: center;
 }
 
-.loading .circle-out:after,
-.loading .circle-in:after {
+#loading .circle-out:after,
+#loading .circle-in:after {
     content: '';
     display: block;
     width: 99%;
@@ -63,20 +56,21 @@ body {
     border: 3px solid transparent;
 }
 
-.loading .circle-out:after {
-    border-width: 5px;
+#loading .circle-out:after {
+    border-width: 30px;
     border-top-color: #2aa198;
     border-left-color: #2aa198;
 }
 
-.loading .circle-in:after {
+#loading .circle-in:after {
+    border-width: 10px;
     border-top-color: #829601;
     border-left-color: #829601;
 }
 
 @keyframes fade {
     50% {
-        opacity: 0.05;
+        opacity: 0.5;
     }
 }
 
@@ -84,6 +78,7 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
